@@ -32,7 +32,7 @@ class TodoResourceTest {
                 get("/api/1").then()
                                 .statusCode(HttpStatus.SC_OK)
                                 .contentType(MediaType.APPLICATION_JSON)
-                                .body("title", is("Introduction to Quarkus - Imperative"))
+                                .body("title", is("Welcome to KubeCon EU 2024"))
                                 .body("completed", is(false));
         }
 
