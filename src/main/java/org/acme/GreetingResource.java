@@ -1,15 +1,15 @@
 package org.acme;
 
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
 
-@Path("/hello")
+@Path("/admin")
+@RolesAllowed("admin")
 public class GreetingResource {
 
     @GET
     public String hello() {
-        return "Hello from RESTEasy Reactive";
+        return "Welcome to Testcontainers and OpenShift demo!!";
     }
 }
