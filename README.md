@@ -1,4 +1,4 @@
-# quarkus-tcc-os-kubecon-eu24
+# quarkus-tcc-os-demo
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
